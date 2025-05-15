@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  api:
+    build: .
+    ports:
+      - "80:5000"  # Mapear al puerto 80 para no tener que especificar puerto en la URL
+    restart: unless-stopped
